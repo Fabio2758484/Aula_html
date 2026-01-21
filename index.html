@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html>
+
+    <!--Meta dados não apresentado no site-->
+    <head>
+        <!--Titulo da página-->
+        <title>Fabio Lima</title>
+        <!--Descrição do titulo-->
+        <meta name="description" content="Site desenvolvido por Fabio Lima"> 
+        <meta charset="UTF-8">
+        <html lang="pt-br"></html>
+        <!--Vou deixar esses primeiro style so pra mostrar que da pra fazer:-->
+        <style>
+            h1{
+                color: black;
+                font-size: 65px;
+            }
+            h2{
+                color: rgb(0, 0, 0);
+            }
+        </style>
+        <!--Porem a que vou utilizar é com o arquivo style-->
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <!--Conteudo Visual-->
+    <body>
+        <!--Cabeçario-->
+        <header>
+            <h1>Quiz sobre o Fabio Roseno de Lima Filho</h1>
+            <!--Vou deixar o style na linha pra mostrar que da pra fazer-->
+                <h2 style="color: red; font-size: 50px;"">Bem vindo ao teste de amizade</h2>
+                    <p>Nesse teste você provará que realmente me conhece<strong>
+                    <abbr title=" Se você colar eu vou saber, pois eu sou muito foda.">não vale copiar em porra</abbr></strong></p>
+        </header>
+        <!--Conteudo principal-->
+        <main>
+            <!--Introdução-->
+            <section>
+                <p>Seja <strong>sincero</strong> em suas respostas para que assim você possa provar que realmente me conehce, dependendo da nota ganha presente no final,<br>
+                estou fazendo isso para treinar meu conhecimento em paginas e me desenvolver melhor na área que eu desejo seguir carreira.</p>
+            </section>
+            <!--Pergunta 1 Multipla escolha.-->
+            <section>
+                <h2> Qual time de Futebol eu torço?</h2>
+                <!--Form é utilizado para quando vamos coletar informações do usuário vem de Formulario.-->
+                <p>Se você não souber essa pode sair da pagina.</p>
+                    <form>
+                        <!--Input para coletar os dados, type = tipo radio seria as alternativas de multiplas escolhas ja o ID é para identifgicar mesma coisa do name, ja o value por ser tratar de multipla escolha o usuário não vai digitar, então colocamos no campo value oque vai conter na resposta.-->
+                        <input type="radio" value="Flamengo" id="p1b" name="pergunta1"
+                        <label for="p1b">Flamengo</label><br> <!--Lembrar de fechar o br.-->
+
+                        <input type="radio" value="Corinthians" id="p1b" name="pergunta1"
+                        <label for="p1b">Corinthians</label><br>
+
+                        <input type="radio" value="Santos" id="p1b" name="pergunta1"
+                        <label for="p1b">Santos</label><br>
+
+                        <input type="radio" value="Palmeiras" id="p1b" name="pergunta1"
+                        <label  for="p1b">Palmeiras</label>
+                    </form>
+            </section>
+            <!--Pergunta 2 Texto-->
+            <section>
+                <h2> Oque eu gosto de comer todo final de semana quando estou trabalhando?</h2>
+                    <form>
+                        <input type="text" id="p2" name="pergunta2"
+                        placeholder="Digite aqui...">
+                    </form>
+            </section>
+            <!--Pergunta 3 Senha-->
+            <section>
+                <h2>Conte-me um segredo nosso, relaxa ninguém vai ver</h2>
+                    <form>
+                        <input type="password" id="p3" name="pergunta3" 
+                        placeholder="Digite a senha...">
+                    </form>
+            </section>
+            <!--Pergunta 4 trinamento de Data-->
+            <section>
+                <h2>Qual a data do meu aniversário? </h2>
+                    <form>
+                        <input type="date" id="p4" name="pergunta4">
+                    </form>
+            </section>
+            <!--Pergunta 5 escolha varias alternativas-->
+            <section>
+                <h2>Selecione somente a oque for verdade </h2>
+
+                    <input type="checkbox" id="p5" name="pergunta5" value="Eu amo comer"
+                    <label for="p5a">Eu amo comer</label><br>
+
+                    <input type="checkbox" id="p5" name="pergunta5" value="Eu tenho medo do escuro"
+                    <label for="p5b">Eu tenho medo do escuro</label><br>
+
+                    <input type="checkbox" id="p5" name="pergunta5" value="Eu sou Corinthiano"
+                    <label for="p5c">Eu sou Corinthiano</label><br>
+
+                    <input type="checkbox" id="p5" name="pergunta5" value="Quero morrer dormindo"
+                    <label for="p5d">Quero morrer dormindo</label><br>
+
+                    <input type="checkbox" id="p5" name="pergunta5" value="Quero ter doiss filhos"
+                    <label for="p5e">Quero ter dois filhos</label><br>
+
+                    <input type="checkbox" id="p5" name="pergunta5" value="Meu hobby é jogar"
+                    <label for="p5f">Meu hobby é jogar</label><br>
+            </section>
+            <!--Pergunta 6 UpLoad de arquivos-->
+            <section>
+                <h2>Tem alguma foto do TG? Caso sim, coloque-a aqui:</h2>
+                    <input type="file" id="p6" name="pergunta6">
+            </section>
+            <section>
+            <!--Pergunta 7 menu -->
+                <h2>Qual faculdade eu faço?</h2>
+                    <select name="pergunta7" id="p7">
+                        <option value="Não respondido">-------------</option>
+                        <option value="Cyber Segurança">Cyber Segurança</option>
+                        <option value="Administração">Administração</option>
+                        <option value="Ciência da Computação">Ciência da Computação</option>
+                        <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                    </select>
+            </section>   
+            <!--Pergunta 8 menu suspenso-->
+            <section>
+                <h2>Qual a linguagem que eu mais programei?</h2>
+                <form>
+                <!--A tag select é um menu para escolher as opções-->
+                    <select name="pergunta8" id="p8">
+                        <!--option são as opçoes-->
+                        <option value="Não respondido">-------</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                        <option value="C++">C++</option>
+                        <option value="HTML">HTML</option>
+                    </select>
+                </form>
+            </section>
+            <!--Pergunta 9 Imagem-->
+            <section>
+                <h2> Oque a imagem abaixo me lembra?</h2>
+                <input type="text" id="p9" name="pergunta9">
+                    <form>
+                        <figure>
+                            <img src="./Imagens/foto_no_espelho_original.png" alt="Foto Minha no espelho vestindo a farda do TG">
+                            <figcaption>Pai tava no shape em slkk KKKK</figcaption>
+                        </figure>
+                    </form>
+            </section>
+            <!--Pergunta 10-->
+            <section>
+                <h2>Qual meu filme favorito?</h2>
+                    <form>
+                        <input type="radio" id="p10a" name="pergunta10" value="Velozes e Furiosos"
+                        <label for="p10a">Velozes e Furiosos.</label>
+
+                        <input type="radio" id="p10b" name="pergunta10" value="Até o ultimo Homem"
+                        <label for="p10b">Até o ultimo Homem.</label><br>
+
+                        <input type="radio" id="p10c" name="pergunta10" value="Gigante de Aço"
+                        <label for="p10c">Gigante de Aço.</label>
+
+                        <input type="radio" id="p10d" name="pergunta10" value="Circulo de Fogo"
+                        <label for="p10d">Circulo de Fogo.</label><br>
+
+                        <input type="radio" id="p10d" name="pergunta10" value="Duro de Matar"
+                        <label for="p10d">Duro de Matar.</label>
+
+                        <input type="radio" id="p10e" name="pergunta10" value="Harry Potter"
+                        <label for="p10e">Harry Potter.</label><br>
+                    </form>
+            </section>
+            <!--Tabela de Pontuação-->
+            <section>
+                <h2>Qual a sua Pontuação</h2>
+                <table border="1">
+                    <!--Table role tag de linha-->
+                    <tr>
+                        <!--Table data cada célula-->
+                      <td>0-2</td>
+                      <td>Você é um merda em</td>
+                    </tr>
+                    <tr>
+                        <!--Table data cada célula-->
+                      <td>3-4</td>
+                      <td> <abbr title="Se eu estou do seu lado quet te bater KKKKKKKKK">Ai é foda em</abbr></td>
+                    </tr>
+                    <tr>
+                        <!--Table data cada célula-->
+                      <td>5-6</td>
+                      <td> <abbr title="Fodase se ta quase la">Ta quase lá em</abbr></td>
+                    </tr>
+                    <tr>
+                        <!--Table data cada célula-->
+                      <td>7-8</td>
+                      <td> <abbr title="Ninguém liga pra isso">Parabéns</abbr></td>
+                    </tr>
+                    <tr>
+                        <!--Table data cada célula-->
+                      <td>9-10</td>
+                      <td> <abbr title="Mentira KKKKKK só perdeu tempo nessas perguntas">Você é foda </abbr></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <!--Rodapé da pagina-->
+        <footer>
+            <p>&copy Realizado junto as aulas da Rafaella Ballerini conteúdo no link abaixo:<br><a href="https://www.youtube.com/watch?v=Fhy-5CtVkiM" target="_blank">Clique Aqui.</a></p>
+            <p>&copy Proxima pagina que estou criando clique abaixo:<br><a href="pagina_login.html" target="_blank">Clique Aqui.</a></p>
+            <section>
+                <form>
+                    <label for="comentarios">Comentários</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+                    placeholder="Digite seu comentário aqui..."></textarea><br>
+                    <button onclick="alert('FEDBACK ENVIADO')">Envie seu fedback</button>
+                </form>
+            </section>
+        </footer>
+    </body>
+</html>
