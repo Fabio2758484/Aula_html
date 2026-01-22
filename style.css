@@ -1,9 +1,32 @@
 body{
     margin-top:5%;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: 10%;
-    padding: 0%;
+    padding: 2%;
+    background-color: rgb(190, 165, 88);
+    border: 2px solid black;
     
-
-
+}
+h1{
+    margin-left: 5;
+    color: red;
+    padding: 1%;
+    border: 2px solid black
+    
+}
+p{
+    font-size: 30px;
+}
+.comentarios{
+    margin-left:30%;  
+    margin-top: 7%;
+}
+data{
+    padding: 1%; background-color: rgb(134, 117, 210);
+    border: 2px solid black;
+    font-size: 30px;
+}
+.img{
+    width: 100px;
+    height: auto; /* mantém proporção */
 }

@@ -1,0 +1,32 @@
+body{
+    padding: 10px;  
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
+
+h1{
+    color: darkblue;
+    margin: 0%;
+}
+h2{
+    margin-left: 0%;
+}
+p{
+    margin-left: -35%;
+    font-size: 20px;
+}
+.caixalogin{
+    border: 2px solid black;  
+}
+input{
+     margin-left: 0%;
+}
+button{
+    margin-left:0%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+ 

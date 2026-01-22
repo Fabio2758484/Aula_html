@@ -12,11 +12,11 @@
         <!--Vou deixar esses primeiro style so pra mostrar que da pra fazer:-->
         <style>
             h1{
-                color: rgb(255, 0, 0);
+                
                 font-size: 65px;
             }
             h2{
-                color: rgb(0, 0, 0);
+               font-size: 50px;
             }
         </style>
         <!--Porem a que vou utilizar é com o arquivo style-->
@@ -26,9 +26,10 @@
     <body>
         <!--Cabeçario-->
         <header>
-            <h1>Quiz sobre o Fabio Roseno de Lima Filho</h1>
+            <data>17/01/2026</data>
+            <h1>Quiz sobre o Fabio Roseno de Lima </h1>
             <!--Vou deixar o style na linha pra mostrar que da pra fazer-->
-                <h2 style="color: red; font-size: 50px;"">Bem vindo ao teste de amizade</h2>
+                <h2 style="font-size: 50px;"">Bem vindo ao teste de amizade</h2>
                     <p>Nesse teste você provará que realmente me conhece<strong>
                     <abbr title=" Se você colar eu vou saber, pois eu sou muito foda.">não vale copiar em porra</abbr></strong></p>
         </header>
@@ -46,17 +47,17 @@
                 <p>Se você não souber essa pode sair da pagina.</p>
                     <form>
                         <!--Input para coletar os dados, type = tipo radio seria as alternativas de multiplas escolhas ja o ID é para identifgicar mesma coisa do name, ja o value por ser tratar de multipla escolha o usuário não vai digitar, então colocamos no campo value oque vai conter na resposta.-->
-                        <input type="radio" value="Flamengo" id="p1b" name="pergunta1"
-                        <label for="p1b">Flamengo</label><br> <!--Lembrar de fechar o br.-->
+                        <input type="radio" value="Flamengo" id="p1a" name="pergunta1"
+                        <label for="p1a">Flamengo</label><br> <!--Lembrar de fechar o br.-->
 
                         <input type="radio" value="Corinthians" id="p1b" name="pergunta1"
                         <label for="p1b">Corinthians</label><br>
 
-                        <input type="radio" value="Santos" id="p1b" name="pergunta1"
-                        <label for="p1b">Santos</label><br>
+                        <input type="radio" value="Santos" id="p1c" name="pergunta1"
+                        <label for="p1c">Santos</label><br>
 
-                        <input type="radio" value="Palmeiras" id="p1b" name="pergunta1"
-                        <label  for="p1b">Palmeiras</label>
+                        <input type="radio" value="Palmeiras" id="p1d" name="pergunta1"
+                        <label  for="p1d">Palmeiras</label>
                     </form>
             </section>
             <!--Pergunta 2 Texto-->
@@ -135,8 +136,9 @@
                         <option value="HTML">HTML</option>
                     </select>
                 </form>
+        <!--
             </section>
-            <!--Pergunta 9 Imagem-->
+            COMENTEI A PERGUNTA 9 POIS NÃO CONSEGUI MUDAR O TAMANHO DA FOTO.
             <section>
                 <h2> Oque a imagem abaixo me lembra?</h2>
                 <input type="text" id="p9" name="pergunta9">
@@ -147,6 +149,7 @@
                         </figure>
                     </form>
             </section>
+        -->
             <!--Pergunta 10-->
             <section>
                 <h2>Qual meu filme favorito?</h2>
@@ -207,14 +210,16 @@
         <footer>
             <p>&copy Realizado junto as aulas da Rafaella Ballerini conteúdo no link abaixo:<br><a href="https://www.youtube.com/watch?v=Fhy-5CtVkiM" target="_blank">Clique Aqui.</a></p>
             <p>&copy Proxima pagina que estou criando clique abaixo:<br><a href="pagina_login.html" target="_blank">Clique Aqui.</a></p>
-            <section>
-                <form>
-                    <label for="comentarios">Comentários</label><br>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"
-                    placeholder="Digite seu comentário aqui..."></textarea><br>
-                    <button onclick="alert('FEDBACK ENVIADO')">Envie seu fedback</button>
-                </form>
-            </section>
+            <div class="comentarios">
+                <section>
+                    <form>
+                        <label for="comentarios">Comentários</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50"
+                        placeholder="Digite seu comentário aqui..."></textarea><br>
+                        <button onclick="alert('FEDBACK ENVIADO')">Envie seu fedback</button>
+                    </form>
+                </section>
+            </div>
         </footer>
     </body>
 </html>
