@@ -8,8 +8,8 @@
 }
 
 body{
-    background-color: #f4f0ea;
-    color: #798252;
+    background-color: #c7a06f;
+    color: #070404;
     font-family: "Cabin", sans-serif;
     font-weight: 400;
 }
@@ -33,7 +33,14 @@ section{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    
 }
+
+#menususpenso{
+    width: 35%;
+}
+
+
 
 h2{
     color: #331F19;

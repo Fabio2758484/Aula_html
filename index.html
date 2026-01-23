@@ -21,7 +21,7 @@
         -->
         </style>
         <!--Porem a que vou utilizar é com o arquivo style-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <!--Conteudo Visual-->
     <body>
@@ -117,32 +117,34 @@
                 <h2>Tem alguma foto do TG? Caso sim, coloque-a aqui:</h2>
                     <input type="file" id="p6" name="pergunta6">
             </section>
-            <section>
-            <!--Pergunta 7 menu -->
-                <h2>Qual faculdade eu faço?</h2>
-                    <select name="pergunta7" id="p7">
-                        <option value="nao respondido">-------------</option>
-                        <option value="cyber seguranca">Cyber Segurança</option>
-                        <option value="administracao">Administração</option>
-                        <option value="ciencia da computacao">Ciência da Computação</option>
-                        <option value="analise e desenvolvimento de sistemas">Análise e Desenvolvimento de Sistemas</option>
-                    </select>
-            </section>   
-            <!--Pergunta 8 menu suspenso-->
-            <section>
-                <h2>Qual a linguagem que eu mais programei?</h2>
-                <form>
-                <!--A tag select é um menu para escolher as opções-->
-                    <select name="pergunta8" id="p8">
-                        <!--option são as opçoes-->
-                        <option value="na respondido">-------</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="ja">Java</option>
-                        <option value="python">Python</option>
-                        <option value="c++">C++</option>
-                        <option value="html">HTML</option>
-                    </select>
-                </form>
+            <div id="menususpenso">
+                <section>
+                <!--Pergunta 7 menu -->
+                    <h2>Qual faculdade eu faço?</h2>
+                        <select name="pergunta7" id="p7">
+                            <option value="nao respondido">-------------</option>
+                            <option value="cyber seguranca">Cyber Segurança</option>
+                            <option value="administracao">Administração</option>
+                            <option value="ciencia da computacao">Ciência da Computação</option>
+                            <option value="analise e desenvolvimento de sistemas">Análise e Desenvolvimento de Sistemas</option>
+                        </select>
+                </section>   
+                <!--Pergunta 8 menu suspenso-->
+                <section>
+                    <h2>Qual a linguagem que eu mais programei?</h2>
+                    <form>
+                    <!--A tag select é um menu para escolher as opções-->
+                        <select name="pergunta8" id="p8">
+                            <!--option são as opçoes-->
+                            <option value="na respondido">-------</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="ja">Java</option>
+                            <option value="python">Python</option>
+                            <option value="c++">C++</option>
+                            <option value="html">HTML</option>
+                        </select>
+                    </form>
+            </div>    
         <!--
             </section>
             COMENTEI A PERGUNTA 9 POIS NÃO CONSEGUI MUDAR O TAMANHO DA FOTO.
