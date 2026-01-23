@@ -4,12 +4,12 @@
     <!--Meta dados não apresentado no site-->
     <head>
         <!--Titulo da página-->
-        <title>Fabio Lima</title>
+        <title>Fabio Lima Desenvolvimento</title>
         <!--Descrição do titulo-->
         <meta name="description" content="Site desenvolvido por Fabio Lima"> 
         <meta charset="UTF-8">
         <html lang="pt-br"></html>
-        <!--Vou deixar esses primeiro style so pra mostrar que da pra fazer:-->
+        <!--Vou deixar esses primeiro style so pra mostrar que da pra fazer:
         <style>
             h1{
                 
@@ -18,27 +18,33 @@
             h2{
                font-size: 50px;
             }
+        -->
         </style>
         <!--Porem a que vou utilizar é com o arquivo style-->
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="style.css">
     </head>
     <!--Conteudo Visual-->
     <body>
         <!--Cabeçario-->
         <header>
-            <data>17/01/2026</data>
-            <h1>Quiz sobre o Fabio Roseno de Lima </h1>
-            <!--Vou deixar o style na linha pra mostrar que da pra fazer-->
-                <h2 style="font-size: 50px;"">Bem vindo ao teste de amizade</h2>
-                    <p>Nesse teste você provará que realmente me conhece<strong>
-                    <abbr title=" Se você colar eu vou saber, pois eu sou muito foda.">não vale copiar em porra</abbr></strong></p>
+            <data>17/01/2026</data> <em>Desenvolvendo CSS</em>
+            <h1>Creator: Fabio Roseno de Lima </h1>      
         </header>
         <!--Conteudo principal-->
         <main>
             <!--Introdução-->
             <section>
-                <p>Seja <strong>sincero</strong> em suas respostas para que assim você possa provar que realmente me conehce, dependendo da nota ganha presente no final,<br>
-                estou fazendo isso para treinar meu conhecimento em paginas e me desenvolver melhor na área que eu desejo seguir carreira.</p>
+                <!--Vou deixar o style na linha pra mostrar que da pra fazer
+                ficaria assim:
+                <h2 style"color: white;"> texto</h2>
+                -->
+            <div class="bemvindo">
+                <h2>Bem vindo ao teste de amizade!</h2>
+            </div>
+                    <p class="pinicial">Nesse teste você provará que realmente me conhece<strong>
+                        <abbr title=" Se você colar eu vou saber, pois eu sou muito foda.">não vale copiar em porra</abbr></strong>
+                    seja <strong>sincero</strong> em suas respostas para que assim você possa provar que realmente me conehce, dependendo da nota ganha presente no final,
+                    estou fazendo isso para treinar meu conhecimento em paginas e me desenvolver melhor na área que eu desejo seguir carreira.</p>
             </section>
             <!--Pergunta 1 Multipla escolha.-->
             <section>
@@ -47,16 +53,16 @@
                 <p>Se você não souber essa pode sair da pagina.</p>
                     <form>
                         <!--Input para coletar os dados, type = tipo radio seria as alternativas de multiplas escolhas ja o ID é para identifgicar mesma coisa do name, ja o value por ser tratar de multipla escolha o usuário não vai digitar, então colocamos no campo value oque vai conter na resposta.-->
-                        <input type="radio" value="Flamengo" id="p1a" name="pergunta1"
+                        <input type="radio" value="Flamengo" id="p1a" name="pergunta1">
                         <label for="p1a">Flamengo</label><br> <!--Lembrar de fechar o br.-->
 
-                        <input type="radio" value="Corinthians" id="p1b" name="pergunta1"
+                        <input type="radio" value="Corinthians" id="p1b" name="pergunta1">
                         <label for="p1b">Corinthians</label><br>
 
-                        <input type="radio" value="Santos" id="p1c" name="pergunta1"
+                        <input type="radio" value="Santos" id="p1c" name="pergunta1">
                         <label for="p1c">Santos</label><br>
 
-                        <input type="radio" value="Palmeiras" id="p1d" name="pergunta1"
+                        <input type="radio" value="Palmeiras" id="p1d" name="pergunta1">
                         <label  for="p1d">Palmeiras</label>
                     </form>
             </section>
@@ -72,7 +78,7 @@
             <section>
                 <h2>Conte-me um segredo nosso, relaxa ninguém vai ver</h2>
                     <form>
-                        <input type="password" id="p3" name="pergunta3" 
+                        <input type="password" id="p3" name="pergunta3"
                         placeholder="Digite a senha...">
                     </form>
             </section>
@@ -85,25 +91,26 @@
             </section>
             <!--Pergunta 5 escolha varias alternativas-->
             <section>
-                <h2>Selecione somente a oque for verdade </h2>
-
-                    <input type="checkbox" id="p5" name="pergunta5" value="Eu amo comer"
+                <h2>Selecione somente a oque for verdade: </h2>
+                <form>
+                    <input type="checkbox" id="p5" name="pergunta5" value="Eu amo comer">
                     <label for="p5a">Eu amo comer</label><br>
 
-                    <input type="checkbox" id="p5" name="pergunta5" value="Eu tenho medo do escuro"
+                    <input type="checkbox" id="p5" name="pergunta5" value="Eu tenho medo do escuro">
                     <label for="p5b">Eu tenho medo do escuro</label><br>
 
-                    <input type="checkbox" id="p5" name="pergunta5" value="Eu sou Corinthiano"
+                    <input type="checkbox" id="p5" name="pergunta5" value="Eu sou Corinthiano">
                     <label for="p5c">Eu sou Corinthiano</label><br>
 
-                    <input type="checkbox" id="p5" name="pergunta5" value="Quero morrer dormindo"
+                    <input type="checkbox" id="p5" name="pergunta5" value="Quero morrer dormindo">
                     <label for="p5d">Quero morrer dormindo</label><br>
 
-                    <input type="checkbox" id="p5" name="pergunta5" value="Quero ter doiss filhos"
+                    <input type="checkbox" id="p5" name="pergunta5" value="Quero ter doiss filhos">
                     <label for="p5e">Quero ter dois filhos</label><br>
 
-                    <input type="checkbox" id="p5" name="pergunta5" value="Meu hobby é jogar"
+                    <input type="checkbox" id="p5" name="pergunta5" value="Meu hobby é jogar">
                     <label for="p5f">Meu hobby é jogar</label><br>
+                </form>
             </section>
             <!--Pergunta 6 UpLoad de arquivos-->
             <section>
@@ -114,11 +121,11 @@
             <!--Pergunta 7 menu -->
                 <h2>Qual faculdade eu faço?</h2>
                     <select name="pergunta7" id="p7">
-                        <option value="Não respondido">-------------</option>
-                        <option value="Cyber Segurança">Cyber Segurança</option>
-                        <option value="Administração">Administração</option>
-                        <option value="Ciência da Computação">Ciência da Computação</option>
-                        <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="nao respondido">-------------</option>
+                        <option value="cyber seguranca">Cyber Segurança</option>
+                        <option value="administracao">Administração</option>
+                        <option value="ciencia da computacao">Ciência da Computação</option>
+                        <option value="analise e desenvolvimento de sistemas">Análise e Desenvolvimento de Sistemas</option>
                     </select>
             </section>   
             <!--Pergunta 8 menu suspenso-->
@@ -128,12 +135,12 @@
                 <!--A tag select é um menu para escolher as opções-->
                     <select name="pergunta8" id="p8">
                         <!--option são as opçoes-->
-                        <option value="Não respondido">-------</option>
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="Java">Java</option>
-                        <option value="Python">Python</option>
-                        <option value="C++">C++</option>
-                        <option value="HTML">HTML</option>
+                        <option value="na respondido">-------</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="ja">Java</option>
+                        <option value="python">Python</option>
+                        <option value="c++">C++</option>
+                        <option value="html">HTML</option>
                     </select>
                 </form>
         <!--
@@ -154,22 +161,22 @@
             <section>
                 <h2>Qual meu filme favorito?</h2>
                     <form>
-                        <input type="radio" id="p10a" name="pergunta10" value="Velozes e Furiosos"
-                        <label for="p10a">Velozes e Furiosos.</label>
+                        <input type="radio" id="p10a" name="pergunta10" value="Velozes e Furiosos">
+                        <label for="p10a">Velozes e Furiosos.</label><br>
 
-                        <input type="radio" id="p10b" name="pergunta10" value="Até o ultimo Homem"
+                        <input type="radio" id="p10b" name="pergunta10" value="Até o ultimo Homem">
                         <label for="p10b">Até o ultimo Homem.</label><br>
 
-                        <input type="radio" id="p10c" name="pergunta10" value="Gigante de Aço"
-                        <label for="p10c">Gigante de Aço.</label>
+                        <input type="radio" id="p10c" name="pergunta10" value="Gigante de Aço">
+                        <label for="p10c">Gigante de Aço.</label><br>
 
-                        <input type="radio" id="p10d" name="pergunta10" value="Circulo de Fogo"
+                        <input type="radio" id="p10d" name="pergunta10" value="Circulo de Fogo">
                         <label for="p10d">Circulo de Fogo.</label><br>
 
-                        <input type="radio" id="p10d" name="pergunta10" value="Duro de Matar"
-                        <label for="p10d">Duro de Matar.</label>
+                        <input type="radio" id="p10d" name="pergunta10" value="Duro de Matar">
+                        <label for="p10d">Duro de Matar.</label><br>
 
-                        <input type="radio" id="p10e" name="pergunta10" value="Harry Potter"
+                        <input type="radio" id="p10e" name="pergunta10" value="Harry Potter">
                         <label for="p10e">Harry Potter.</label><br>
                     </form>
             </section>
@@ -180,30 +187,34 @@
                     <!--Table role tag de linha-->
                     <tr>
                         <!--Table data cada célula-->
-                      <td>0-2</td>
-                      <td>Você é um merda em</td>
+                        <td>0-2</td>
+                        <td>Você é um merda em</td>
                     </tr>
                     <tr>
-                        <!--Table data cada célula-->
-                      <td>3-4</td>
-                      <td> <abbr title="Se eu estou do seu lado quet te bater KKKKKKKKK">Ai é foda em</abbr></td>
+                            <!--Table data cada célula-->
+                        <td>3-4</td>
+                        <td><abbr title="Se eu estou do seu lado quet te bater KKKKKKKKK">Ai é foda em</abbr></td>
                     </tr>
                     <tr>
-                        <!--Table data cada célula-->
-                      <td>5-6</td>
-                      <td> <abbr title="Fodase se ta quase la">Ta quase lá em</abbr></td>
+                            <!--Table data cada célula-->
+                        <td>5-6</td>
+                        <td><abbr title="Fodase se ta quase la">Ta quase lá em</abbr></td>
                     </tr>
                     <tr>
-                        <!--Table data cada célula-->
-                      <td>7-8</td>
-                      <td> <abbr title="Ninguém liga pra isso">Parabéns</abbr></td>
+                            <!--Table data cada célula-->
+                        <td>7-8</td>
+                        <td><abbr title="Ninguém liga pra isso">Parabéns</abbr></td>
                     </tr>
                     <tr>
-                        <!--Table data cada célula-->
-                      <td>9-10</td>
-                      <td> <abbr title="Mentira KKKKKK só perdeu tempo nessas perguntas">Você é foda </abbr></td>
+                            <!--Table data cada célula-->
+                        <td>9-10</td>
+                        <td> <abbr title="Mentira KKKKKK só perdeu tempo nessas perguntas">Você é foda </abbr></td>
                     </tr>
                 </table>
+            </section>
+            <!--Lista -->
+            <section>
+
             </section>
         </main>
         <!--Rodapé da pagina-->
