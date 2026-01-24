@@ -1,82 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Corpo da página */
+body {
+    min-height: 100vh;
+    margin: 5% auto;
+    padding: 2rem;
+    max-width: 1200px;
 
+    background-color: #fff;
+    border: 2px solid #000;
+    font-family: Arial, sans-serif;
+}
 
-
-
-header{
-    /*unidade de medida "rem" ela é relativa, usar ela ao invés do "pixel" porque o px é fixo*/
-   
+/* Cabeçalho */
+header {
     background-color: #331f19;
-    border: 3px solid black;
-    
+    border: 3px solid #000;
+    padding: 1rem;
 }
 
-
-
-body{
-    margin-top:5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 2%;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;   
-  
-    
-}
-h1{
-    margin-left: 0%;
+/* Títulos */
+h1 {
     color: rgb(231, 211, 211);
-    padding: 1%;
     text-align: center;
-    font-size: 50px;
-    
-}
-h2{
-    margin-left: 0%;
-    font-size: 40px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
 }
 
-.pinicial{
+h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 0.5rem;
+}
+
+/* Parágrafos */
+p {
+    font-size: clamp(1.2rem, 2.5vw, 1.9rem);
+    line-height: 1.5;
+}
+
+/* Página inicial */
+.pinicial {
+    background-color: #fff;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    padding: 1rem;
 }
 
-p{
-    font-size: 30px;
+/* Comentários */
+.comentarios {
+    max-width: 600px;
+    margin: 3rem auto;
 }
-.comentarios{
-    margin-left:30%;  
-    margin-top: 7%;
-}
-data{
-    padding: 1%; 
-    font-size: 30px;
-    color: white;
-    
 
+/* Datas */
+data {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
 }
-.img{
+
+/* Imagem */
+.img {
     width: 100px;
-    height: auto; /* mantém proporção */
-}
-.bemvindo{
-    border-radius: 100px;
-   text-align: center; 
-   background-color: rgba(175, 213, 244, 0.988);
-}
-input{
-   font-size: 25px;
-}
-label{
-    font-size: 25px;
+    height: auto;
+    display: block;
 }
 
-em{
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 4rem;
-
+/* Área de boas-vindas */
+.bemvindo {
+    background-color: rgba(175, 213, 244, 0.99);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem 0;
 }
 
+/* Formulário */
+label, input {
+    font-size: 1.3rem;
+    
+}
 
+/* Texto em destaque */
+em {
+    color: #fff;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+select{
+    width: 35%;
+    border-radius: 5px;
+    background-color: rgba(192, 178, 178, 0.74);
+}
 

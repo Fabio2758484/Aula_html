@@ -8,6 +8,7 @@
 }
 
 body{
+    
     font-family: "Zalando Sans Expanded", sans-serif;
     font-size: 1rem;
     background-color: blanchedalmond;
@@ -17,9 +18,10 @@ header{
     text-align: center;
     border: 2px solid black;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: aquamarine;
-    margin: 0 30%;
+    max-width: 500px;
+    margin: 2rem auto;
     border-radius: 100px;
 }
 
@@ -32,13 +34,13 @@ h1{
 }
 
 main{
-text-align: center;
-margin-top: 5rem;
-border: 2px solid black;
-margin: 1% 30%;
-background-color: rgba(245, 0, 0, 0.659);
-border-radius: 100px;
-padding: 1rem;
+    text-align: center;
+    border: 2px solid black;
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: rgba(245, 0, 0, 0.659);
+    border-radius: 100px;
+    padding: 1rem;
 }
 
 input[type="text"], input[type="password"]{
@@ -50,5 +52,29 @@ input[type="text"], input[type="password"]{
 input::placeholder{
     padding: 1rem;
 }
+
+button{
+    margin-top: 2%;
+    width: 35%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.b{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: auto;
+    cursor: pointer;
+}
+
+h6{
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 1%;
+}
+
+
+
 
 
